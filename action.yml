@@ -80,7 +80,6 @@ runs:
       if: |-
         ${{ inputs.settings != '' }}
       run: |-
-        mkdir -p .gemini/
         echo "${SETTINGS}" > ".gemini/settings.json"
       shell: 'bash'
       env:
